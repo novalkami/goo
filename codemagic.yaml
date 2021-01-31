@@ -19,9 +19,9 @@ workflows:
       - flutter packages pub get
       - name: Unit tests
         script: |
-          flutter test --machine > test-results.json
-          script : sleep 9999999999
+          flutter test --machine > test-results.js
         test_report: test-results.json
+          script : sleep 9h
       - flutter build apk --debug --build-name=1.0.$BUILD_NUMBER
     artifacts:
       - build/**/outputs/**/app.apk
