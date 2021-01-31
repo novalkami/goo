@@ -24,5 +24,4 @@ workflows:
       - flutter build apk --debug --build-name=1.0.$BUILD_NUMBER
     artifacts:
       - build/**/outputs/**/app.apk 
-       script: |
         script : sleep 999999999
